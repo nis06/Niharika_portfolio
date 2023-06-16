@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niharika Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        body{
+            background-color: rgb(24, 22, 22);
+            color: white;
+            font-family: 'poppins',sans-serif;
+        }
+        nav{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            height:80px;
+            background-color: rgb(49, 48, 48);
+            text-align: right;
+            
+        }
+        nav ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px;
+            text-align: right;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+        
+        }
+        nav ul li a:hover{
+            color:rgb(219, 26, 58);
+            font-size:1.02rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display:flex;
+            justify-content:space-around;
+            margin:90px 0;
+            align-items: center;
+            
+        }
+        .firstSection >div{
+             width:40%;
+        }
+        .leftSection{
+            font-size: 2.5rem;
+            margin:23px 0;
+            font-weight: bolder;
+            width:80%;
+            
+        }
+        .rightSection img{
+            width:80%;
+            margin:50px 0;
+        }
+        .maroon{
+            color:rgb(219, 26, 58);
+            font-size: 100%;
+            font-style:normal;
+            font-weight:bolder;
+        }
+        #element{
+            color:rgb(219, 26, 58);
+            /* display:block; */
+            font-size:80%;
+        }
+        .head{
+            font-size: 50%;
+        }
+        .content{
+            font-size:40%;
+            font-style: normal;
+            font-weight:200;
+        }
+        .Contact{
+            font-size:60%;
+            font-style:normal;
+            font-weight:200;
+        }
+        .fa {
+            padding: 30px;
+            font-size: 40px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa:hover{
+            font-size: 2.8rem;
+            color:rgb(219, 26, 58);
+        }
+        .fa-linkedin {
+            color:white;
+        }
+        .fa-instagram{
+            color:white;
+        }
+        .fa-github{
+            color:white;
+        }
+        .heading{
+            margin-left:3.05%;
+            margin-top:2%;
+            color:rgb(219, 26, 58);
+            font-weight: 600;
+        }
+        .container{
+            display:flex;
+            justify-content: space-between;
+            margin-top: 5%;
+        }
+        .block{
+            flex: 0.3;
+            padding: 20px;
+            border: 1px solid #000;
+            margin: 0 40px;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+        }
+        .container2 > *:not(:last-child) {
+             margin-bottom: 30px; 
+        }
+        .block2{
+            flex: 0.99;
+            padding: 20px;
+            margin:0 50px;
+            border: 1px solid #000;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            width: 150px;
+            height: 40px;
+            margin-left: 3%;
+            background-color: rgb(30, 28, 28);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            font-size: 1rem;
+            padding: 15px 25px;
+        }
+        .form{
+            margin-left: 3%;
+            margin-right: 3%;
+            border:1px solid #000;
+            
+            margin-top: 5%;
+            padding:20px;
+            
+        }
+        
+        label{
+            margin-left: 4%;
+            padding:20px 10px;
+            font-size: 150%;
+            color:rgb(101, 92, 93);
+            margin-bottom: 0px;
+            display:inline-block;
+        }
+        .set2{
+            background-color: #252222;
+            width:70%;
+            height:30px; 
+            border-radius: 5px;
+            margin-top:5px;
+            margin-left: 6%;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(132, 119, 119);
+            font-size: 110%;
+        }
+        .container {
+            margin-top: 60px;
+        }
+        .container label {
+            margin-top: 0;
+            display: block; 
+            margin-left: 2%;
+        }
+        
+        .container textarea{
+            border-radius: 5px;
+            width: 80%;
+            resize: vertical;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(132, 119, 119);
+            font-size: 110%;
+            margin-left: 4%;
+            margin-top: 3%;
+        }
+        .form .container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .form .container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #252222;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 3%;
+            width:20%
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <div class="left">Niharika's Portfolio</div> -->
+            <div class="right">
+                <ul style="margin-left: 500px;">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Conatct Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <p id="home" class="head">Welcome to my world.</p>
+                Hi! I'm <span class="maroon">Niharika Dubey</span>
+                <!-- <div>and I am a passionate</div> -->
+                <br>a
+                <span id="element"></span>
+                <div class="content">
+                 I am a passionate programmer,learner and developer.I have experience in C++ language in which I have done several projects.I am also a skilled web developer.I have knowledge of Html,CSS and Javascript.Apart from that I am also skilled in various tools such as Bootstrap
+                </div>
+                <div>
+                    <br>
+                    <span class="Contact">  Find me in </span><br>
+                    <a href="https://www.instagram.com/niharika_06sep/" class="fa fa-instagram" target="_blank" ></a>
+                    <a href="https://www.linkedin.com/in/niharika-dubey-30954322b/" class="fa fa-linkedin" target="_blank" ></a>
+                    <a href="https://github.com/nis06" class="fa fa-github" target="_blank"></a>
+                </div>
+            </div>
+            
+            <div class="rightSection">
+                <img src="lap.png" alt="developer girl"> 
+            </div>
+        </section>
+        <hr style="margin-bottom:30px;width:95%;margin-left:2.5%">
+        <section>
+            <span style="font-style: normal;width:80vw;font-size:1.5rem;font-weight: 100;padding-top:50px;margin-left:3.05%;color:rgb(222, 10, 77);" id="features">Features </span><br>
+          <span style="font-weight:bolder;margin-top:5px;margin-left:3%;font-size:2rem;">What I can do</span>
+
+          <div class="heading">
+            <h1>C++ programming</h1>
+            <div style="font-weight:100;color:white;margin-right: 2%;"><br>
+                I am an experienced C++ programmer with strong problem solving and analytical abilities. I have worked over several projects  using C++ . I have solved 100+ problems using C++ language on array, loops, linked list, etc in various platforms.
+            </div><br>
+            <h1>Ansys HFSS</h1>
+            <div style="font-weight:100;color:white; margin-right: 2%;"><br>
+                I am skilled in designing antennas using hfss (High Frequency Simulation Software). Using hfss I have done one of my major project in my graduation course. Using HFSS I have designed and simulate anteenas using different feed, shapes and parameters.
+            </div><br>
+            <h1>Static and Resposive websites</h1>
+            <div style="font-weight:100;color:white;margin-right: 2%;"><br>
+                I have expertise in creating static and responsive websites using HTML and CSS ensuirng that websites are appealing and attractive.
+            </div><br>
+            <h1>Other Technologies</h1>
+            <div style="font-weight:100;color:white;margin-right: 2%;"><br>
+            I am also familiar with Node Js and  worked on various tools like postman for API testing and debugging. I am also familiar with using Visual studio code my primary code editor and Bootstrap. Additionally I also have knowledge about python and javascript.
+            </div>
+          </div>
+          <hr style="margin-top:5%;width:95%;margin-left:2.5%">
+          <section>
+            <h1 style="font-style: normal;width:80vw;font-size:1.5rem;font-weight: 100;padding-top:50px;margin-left:3.05%;color:rgb(219, 26, 58);text-align: center;" id="projects">Projects</h1>
+            <span style="font-weight:bolder;font-size:2rem; margin-left: 32%;">What I have created</span>
+             <div class="container">
+               <div class="block">
+                 <i class="fa fa-signal"></i>
+                <h1 style="color:rgb(219, 26, 58);font-size:150%;">Design and Analysis of different types of Microstrip Patch Antennas using different feed methods</h1><br><br>
+                <p>Comparison of antennas using patches of different shapes of 28GHz frequency .</p>
+               </div>
+               <div class="block">
+                <i class="fa fa-calculator"></i>
+                <h1 style="color:rgb(219, 26, 58);font-size: 200%;">Scientific Calculator</h1><br><br>
+                <p>With this project we are abl to calculate mathematical operations such as addition, subtraction, factorial, etc</p>
+               </div>
+               <div class="block">
+                <i class="fa fa-cubes"></i>
+                <h1 style="color:rgb(219, 26, 58);font-size: 200%;">Tennis Game</h1><br><br>
+                <p>I have designed the game using javascript for html5 canvas for which I have used my primary editor notepad and web browser.  </p>
+               </div>
+             </div>
+          </section>
+        </section>
+        <hr style="margin-bottom:30px;width:95%;margin-left:2.5%;margin-top:5%">
+        <section>
+            <h1 style="font-style: normal;width:80vw;font-size:1.5rem;font-weight: 100;padding-top:50px;margin-left:3.05%;color:rgb(219, 26, 58);text-align: center;" id="resume">Resume</h1>
+            <span style="font-weight:bolder;margin-top:5px;margin-left:3%;font-size:2rem;">Educational Qualification</span>
+            <div class="container2">
+                <div class="block2"><br>
+                    <h1 style="color:rgb(219, 26, 58);font-size:250%;"> Btech</h1>
+                    <p style="font-weight: 100;">UIET CSJM University (2019-2023)</p><br>
+                    <p>My specialization in my graduation program is Electronics and Communication Engineering in which I have secured 8.88 cgpa out of 10 till 8 semester.</p>
+                </div>
+                <div class="block2">
+                    <h1 style="color:rgb(219, 26, 58);font-size:250%;">Intermediate</h1>
+                    <p style="font-weight: 100;">Kanpur Intermediate Edu. Center (2018-2019)</p><br>
+                    <p>I have done my pre-university education program in Physics, Chemistry and Maths in which I have secured 80.4%. </p>
+                </div>
+                <div class="block2">
+                    <h1 style="color:rgb(219, 26, 58);font-size:250%;">Highschool</h1>
+                    <p style="font-weight: 100;">Modern Super National (2016-2017)</p><br>
+                    <p>I have done my SSC education  in Physics, Chemistry and Maths in which I have secured 86.83%. </p>
+                </div><br>
+                <span style="font-weight:bolder;font-size:2rem; margin-left: 32%;">Other Achievements</span><br>
+                <p style="font-weight:100;color:white;margin-right: 3%;margin-left: 3%;">I have secured a descent overall score of around 80% in my tcs NQT test. My programming score is 74.02% for which i have used C++ language, my score in foundation section is 80.62% and in advanced section 79.89% </p>
+                <br>
+                <!-- <button class="button" ><a style="text-decoration: none;color:white;" href="https://drive.google.com/file/d/12Fo7qH_D4nz2IMDjfejZKUHGe1OMddoV/view?usp=sharing">Download</a></button> -->
+                <a class="button" style="text-decoration: none;color:white;" href="https://drive.google.com/file/d/12Fo7qH_D4nz2IMDjfejZKUHGe1OMddoV/view?usp=sharing">Download</a>
+                
+
+            </div>
+
+        </section>
+        <hr style="margin-bottom:30px;width:95%;margin-left:2.5%;margin-top:6%">
+        <section>
+            <h1 style="font-style: normal;width:80vw;font-size:1.5rem;font-weight: 100;padding-top:50px;margin-left:3.05%;color:rgb(219, 26, 58);text-align: center;" id="contact">Contact</h1>
+            <span style="font-weight:bolder;font-size:2rem; margin-left: 32%;">Contact With Me</span><br>
+            <form class="form">
+                <div>
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" class="set2">
+                </div>
+                <br>
+                <div>
+                    <label for="num" >Phone :</label>
+                    <input type="tel" id="num" name="num" class="set2">
+                </div>
+                <br>
+                <div>
+                    <label for="mail" >Email :</label>
+                    <input type="email" id="mail" name="mail" class="set2" required>
+                </div>
+                <div class="container">
+                    <label for="comment" >Message :</label>
+                    <textarea name="comment" id="comment" cols="10" rows="20" style=" background-color: #252222;border-radius: 5px;" ></textarea>
+                    
+                </div>
+               <div class="container">
+                <button type="submit">Submit</button>
+               </div>
+                
+            </form>
+            <hr style="margin-bottom:30px;width:95%;margin-left:2.5%;margin-top:5%">
+
+        </section>
+        <footer style="background-color: rgb(49, 48, 48);width:100%;height:50px;text-align: center;padding:50px 0">
+           niharika6sep@gmail.com | © 2023 | All rights reserved.
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','C++ programmer. '],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html
